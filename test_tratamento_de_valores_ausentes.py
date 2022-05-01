@@ -9,15 +9,15 @@ def test_retorna_substituicao_valores_ausentes(tb):
 
 @testbook('./tratamento_de_valores_ausentes.ipynb', execute=True)
 def test_retorna_substituicao_pela_moda(tb):
-    moda_severidade = tb.ref("verifica_moda_da_severidade")
+    moda = tb.ref("substitui_valores_ausentes_com_moda")
     lista = ['BI-RADS', 'Forma', ' Margem', ' Densidade', 'Severidade']
     for lis in lista:
-        assert moda_severidade(lis) == None
+        assert moda(lis) == None
 
 
 @testbook('./tratamento_de_valores_ausentes.ipynb', execute=True)
 def test_retorna_substituicao_pela_media(tb):
-    media_severidade = tb.ref("verifica_media_da_severidade")
-    assert media_severidade('Idade') == None
+    media = tb.ref("substitui_valores_ausentes_com_media")
+    assert media('Idade') == None
 
 
