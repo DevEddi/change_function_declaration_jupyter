@@ -36,9 +36,7 @@ In this code I used the simple procedure. According to the book, which is refere
 - Find all references to the old method declaration and update them with the new call.
 - Test.
 
-Para visualizar o código da refatoração você deve clicar na aba de branches, uma branch está sem refatoração a ou está com refatoração.
 
-To view the refactoring code you must click on the branches tab, a branch is not refactored or is refactored.
 
 ## Tools
 ### pytest
